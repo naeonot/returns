@@ -22,7 +22,7 @@
 .newsletter{border-color:var(--grey-6);background:#121212}
 .newsletter-copy>p:last-child{color:#D3D0D0}
 .newsletter-controls input{border-color:var(--grey-6);background:#121212;color:var(--grey-1)}
-.newsletter-controls input:focus{border-color:var(--grey-3);background:#121212;outline:none;box-shadow:none}
+.newsletter-controls input:focus{border-color:var(--grey-3);outline:none;box-shadow:none}
 .newsletter-controls button{background:#e8e8e8;color:#111114}
 .newsletter-controls button:hover{background:#fff;color:#111114}
 .footer-brand{display:inline-flex;align-items:center}
@@ -126,3 +126,16 @@
 .contact-send{display:inline-flex;align-items:center;gap:12px;flex:none;padding:14px 20px;border-radius:999px;background:var(--grey-1);color:#111!important;font-size:.82rem;font-weight:700;text-decoration:none;transition:background 160ms ease}
 .contact-send:hover{background:var(--red-4)}
 @media(max-width:600px){.contact-card{align-items:flex-start;flex-direction:column;gap:24px}.contact-send{width:100%;justify-content:center}}
+
+
+/* Newsletter confirmation tick */
+.newsletter-controls button.newsletter-success{
+  background:#e8e8e8;
+  color:#111114;
+  cursor:default;
+}
+.newsletter-check{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.newsletter-check path{stroke-dasharray:24;stroke-dashoffset:24;animation:newsletter-draw-check 420ms ease-out 100ms forwards}
+@keyframes newsletter-draw-check{
+  to{stroke-dashoffset:0}
+}
