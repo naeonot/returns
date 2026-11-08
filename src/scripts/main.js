@@ -28,7 +28,10 @@ const translations = {
   }
 };
 
-const languageSelect=document.querySelector("#language-select");
+const languageTrigger=document.querySelector("#language-trigger");
+const languageMenu=document.querySelector("#language-menu");
+const languageCurrent=document.querySelector("#language-current");
+const languageOptions=languageMenu ? [...languageMenu.querySelectorAll("[data-language]")] : [];
 function setLanguage(language){
   const selected=translations[language] ? language : "en";
   document.documentElement.lang=selected;
@@ -40,10 +43,35 @@ function setLanguage(language){
     const value=translations[selected][element.dataset.i18nPlaceholder];
     if(value!==undefined) element.placeholder=value;
   });
-  if(languageSelect) languageSelect.value=selected;
+  if(languageCurrent) languageCurrent.textContent=selected==="hi" ? "हिन्दी" : "English";
+  languageOptions.forEach(option=>option.setAttribute("aria-current",option.dataset.language===selected ? "true" : "false"));
   try{localStorage.setItem("returns-language",selected)}catch(error){}
 }
 let savedLanguage="en";
 try{savedLanguage=localStorage.getItem("returns-language")||"en"}catch(error){}
-if(languageSelect) languageSelect.addEventListener("change",event=>setLanguage(event.target.value));
+if(languageTrigger && languageMenu){
+  languageTrigger.addEventListener("click",()=>{
+    const open=languageTrigger.getAttribute("aria-expanded")==="true";
+    languageTrigger.setAttribute("aria-expanded",String(!open));
+    languageMenu.hidden=open;
+  });
+  languageOptions.forEach(option=>option.addEventListener("click",()=>{
+    setLanguage(option.dataset.language);
+    languageMenu.hidden=true;
+    languageTrigger.setAttribute("aria-expanded","false");
+  }));
+  document.addEventListener("click",event=>{
+    if(!event.target.closest(".language-picker")){
+      languageMenu.hidden=true;
+      languageTrigger.setAttribute("aria-expanded","false");
+    }
+  });
+  document.addEventListener("keydown",event=>{
+    if(event.key==="Escape"){
+      languageMenu.hidden=true;
+      languageTrigger.setAttribute("aria-expanded","false");
+      languageTrigger.focus();
+    }
+  });
+}
 setLanguage(savedLanguage);
