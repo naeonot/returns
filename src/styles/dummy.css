@@ -21,3 +21,14 @@
 .poem-ending h2{margin-top:18px;font-size:clamp(2.6rem,6vw,4.8rem);line-height:1;letter-spacing:-.07em}
 .poem-ending>p:last-child{margin-top:18px;color:#c8c2c2;font-size:.9rem;line-height:1.7}
 @media(max-width:700px){.poem-hero{padding-top:76px}.poem-verses{width:calc(100% - 32px);grid-template-columns:1fr;gap:16px;padding:30px 0 76px}.verse-card{padding:14px}.verse-card>img{height:210px}.verse-card>div{padding:20px 6px 12px}.verse-card p{font-size:.9rem}.poem-ending{width:calc(100% - 32px);margin-bottom:76px}}
+
+.gpt-note{width:min(1000px,calc(100% - 48px));margin:-54px auto 90px;padding:24px 18px;text-align:center}
+.gpt-note p{color:#827979;font-size:.78rem;line-height:1.6;letter-spacing:.015em}
+.gpt-note p span{color:#b4a4a4;white-space:nowrap}
+.gpt-like{display:inline-flex;align-items:center;justify-content:center;gap:7px;margin-top:15px;padding:8px 15px;border:1px solid #393030;border-radius:999px;background:#151515;color:#c8c2c2;font:inherit;font-size:.78rem;cursor:pointer;transition:color .2s,border-color .2s,background .2s}
+.gpt-like:hover{border-color:#76504f;color:#f1c4c2}
+.gpt-like-heart{font-size:1rem;line-height:1;color:#c78a87}
+.gpt-like.is-liked{border-color:#80504e;background:#211717;color:#f1c4c2}
+.gpt-like.is-liked .gpt-like-heart{color:#ff8685}
+.gpt-like:focus-visible{outline:2px solid var(--red-3);outline-offset:3px}
+@media(max-width:700px){.gpt-note{width:calc(100% - 32px);margin:-34px auto 60px;padding:18px 8px}}
