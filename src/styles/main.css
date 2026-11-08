@@ -130,11 +130,16 @@
 
 /* Newsletter confirmation tick */
 .newsletter-controls button.newsletter-success{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:50px;
+  padding:0;
   background:#e8e8e8;
   color:#111114;
   cursor:default;
 }
-.newsletter-check{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.newsletter-check{display:block;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
 .newsletter-check path{stroke-dasharray:24;stroke-dashoffset:24;animation:newsletter-draw-check 420ms ease-out 100ms forwards}
 @keyframes newsletter-draw-check{
   to{stroke-dashoffset:0}
