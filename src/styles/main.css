@@ -6,21 +6,21 @@
   --red-5:#C30702;--red-6:#840301;--red-7:#490100;
   --grey-1:#F1F0F0;--grey-2:#D3D0D0;--grey-3:#AFA8A8;--grey-4:#8E8181;
   --grey-5:#695E5E;--grey-6:#453D3D;--grey-7:#241F1F;
-  color-scheme:dark;background:#0c0c0c;color:var(--grey-1);
+  color-scheme:dark;background:#121212;color:var(--grey-1);
 }
-.site-header{border-bottom-color:var(--grey-7);background:#0c0c0c}
+.site-header{border-bottom-color:var(--grey-7);background:#121212}
 .brand{display:flex;align-items:center;min-width:130px}
 .brand img{display:block;width:150px;max-height:48px;object-fit:contain;object-position:left center}
 .main-nav a{color:var(--grey-2)}
 .main-nav a:hover,.footer-column a:hover{color:var(--red-2)}
 .main-nav .signup-link{border-color:var(--grey-5);background:transparent;color:var(--grey-1)}
 .main-nav .signup-link:hover{border-color:var(--grey-2);background:var(--grey-1);color:#100b0b}
-.home-main{background:#0c0c0c}
+.home-main{background:#121212}
 .hero{position:relative}
 .eyebrow{color:var(--red-3)}
 .hero-logo{display:block;width:min(100%,760px);max-height:300px;height:auto;object-fit:contain;margin:22px auto 0;}
 .intro{color:var(--grey-3)}
-.site-footer{background:#0c0c0c;border-top-color:var(--grey-7)}
+.site-footer{background:#121212;border-top-color:var(--grey-7)}
 .newsletter{border-color:var(--grey-6);background:#121212}
 .newsletter-copy>p:last-child{color:var(--grey-3)}
 .newsletter-controls input{border-color:var(--grey-6);background:#121212;color:var(--grey-1)}
