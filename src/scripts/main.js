@@ -43,9 +43,7 @@ function setLanguage(language){
   if(languageSelect) languageSelect.value=selected;
   try{localStorage.setItem("returns-language",selected)}catch(error){}
 }
-if(languageSelect){
-  let savedLanguage="en";
-  try{savedLanguage=localStorage.getItem("returns-language")||"en"}catch(error){}
-  languageSelect.addEventListener("change",event=>setLanguage(event.target.value));
-  setLanguage(savedLanguage);
-}
+let savedLanguage="en";
+try{savedLanguage=localStorage.getItem("returns-language")||"en"}catch(error){}
+if(languageSelect) languageSelect.addEventListener("change",event=>setLanguage(event.target.value));
+setLanguage(savedLanguage);
