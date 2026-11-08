@@ -1,6 +1,6 @@
 /*
  * RETURNS — FUN / EXPERIMENTAL JS
- * Temporary popup for Donate and Download.
+ * Temporary popup for Donate, Support, Download, Sign up, and Join.
  * Remove this file + its stylesheet link to undo the experiment.
  */
 (() => {
@@ -30,7 +30,11 @@
   };
 
   document.querySelector('.main-nav a[href="#download"]')?.addEventListener("click", openPopup);
+  document.querySelector('.main-nav a[href="#support"]')?.addEventListener("click", openPopup);
   document.querySelector('#support a[href="#support"]')?.addEventListener("click", openPopup);
+  document.querySelector(".signup-link")?.addEventListener("click", openPopup);
+  document.querySelector(".newsletter-controls button")?.addEventListener("click", openPopup);
+
   closeButton.addEventListener("click", closePopup);
   popup.addEventListener("click", (event) => {
     if (event.target === popup) closePopup();
