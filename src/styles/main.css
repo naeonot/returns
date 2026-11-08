@@ -34,3 +34,14 @@
 .footer-bottom span:first-child{color:#D3D0D0}
 .content-page p{color:#D3D0D0}
 @media(max-width:600px){.brand img{width:132px}.footer-brand img{width:136px}}
+
+
+/* Footer language selector */
+.footer-brand-top{display:flex;align-items:center;justify-content:space-between;gap:28px;width:min(100%,360px)}
+.language-picker{display:flex;align-items:center;gap:8px;min-height:38px;padding:0 12px;border:1px solid var(--grey-6);border-radius:999px;background:#121212;color:var(--grey-2);transition:border-color 160ms ease}
+.language-picker:hover,.language-picker:focus-within{border-color:var(--grey-4)}
+.language-icon{font-size:1rem;line-height:1;color:var(--grey-3)}
+.language-picker select{max-width:112px;border:0;outline:0;background:transparent;color:var(--grey-1);font:inherit;font-size:.78rem;cursor:pointer}
+.language-picker select option{background:#121212;color:var(--grey-1)}
+@media(max-width:760px){.footer-brand-top{width:100%;max-width:360px}}
+@media(max-width:600px){.footer-brand-top{gap:16px}.language-picker{min-height:36px;padding:0 10px}}
