@@ -11,6 +11,7 @@
 .site-header{border-bottom-color:var(--grey-7);background:#121212}
 .brand{display:flex;align-items:center;min-width:130px}
 .brand img{display:block;width:150px;max-height:48px;object-fit:contain;object-position:left center}
+.brand img,.hero-logo,.footer-brand img{filter:brightness(0) saturate(100%) invert(9%) sepia(94%) saturate(4782%) hue-rotate(351deg) brightness(88%) contrast(105%)}
 .main-nav a{color:var(--grey-2)}
 .main-nav a:hover,.footer-column a:hover{color:var(--red-2)}
 .main-nav .signup-link{border-color:var(--grey-5);background:transparent;color:var(--grey-1)}
