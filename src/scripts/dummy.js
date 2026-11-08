@@ -65,5 +65,37 @@ if (main) {
       <h2>Some rhymes<br>stay with us.</h2>
       <p>From one generation to the next, a little rhythm goes a long way.</p>
     </section>
+    <section class="gpt-note" aria-label="A note from GPT">
+      <p>Looks like the developer never quite outgrew childhood. <span>— GPT</span></p>
+      <button class="gpt-like" type="button" aria-pressed="false">
+        <span class="gpt-like-heart" aria-hidden="true">♡</span>
+        <span class="gpt-like-label">Like</span>
+      </button>
+    </section>
   `;
+
+  const likeButton = main.querySelector(".gpt-like");
+  const likeKey = "returns-gpt-note-liked";
+  const setLiked = (liked) => {
+    likeButton.setAttribute("aria-pressed", String(liked));
+    likeButton.querySelector(".gpt-like-heart").textContent = liked ? "♥" : "♡";
+    likeButton.querySelector(".gpt-like-label").textContent = liked ? "Liked" : "Like";
+    likeButton.classList.toggle("is-liked", liked);
+  };
+
+  try {
+    setLiked(localStorage.getItem(likeKey) === "true");
+  } catch {
+    setLiked(false);
+  }
+
+  likeButton.addEventListener("click", () => {
+    const liked = likeButton.getAttribute("aria-pressed") !== "true";
+    setLiked(liked);
+    try {
+      localStorage.setItem(likeKey, String(liked));
+    } catch {
+      // The like still works for this page view if storage is unavailable.
+    }
+  });
 }
