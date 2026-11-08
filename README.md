@@ -1,13 +1,22 @@
 # Returns
 
-Starter structure for the Returns game website.
+Official website for Returns, built with HTML, CSS, JavaScript and Vite.
 
 ## Structure
 
-- `index.html` — page markup
-- `styles/style.css` — global styles
-- `scripts/main.js` — browser-side JavaScript
-- `assets/images/` — image assets
-- `assets/fonts/` — font assets
+- public/ — favicon and public assets
+- src/assets/ — fonts, icons and images
+- src/pages/ — About and Contact pages
+- src/scripts/ — main.js and reusable utils.js
+- src/styles/ — main.css and responsive.css
+- index.html — homepage
+- package.json — project name: returns
+- vercel.json — Vite production build configuration
 
-Open `index.html` in a browser, or deploy the repository with Vercel.
+## Local development
+
+Run `npm install`, then `npm run dev`.
+
+## Production
+
+Run `npm run build`. Vercel publishes the generated dist directory.
