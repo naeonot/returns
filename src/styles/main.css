@@ -54,6 +54,7 @@
 .language-picker{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:0 18px;border:1px solid var(--grey-5);border-radius:999px;background:transparent;color:var(--grey-1);transition:background 160ms ease,border-color 160ms ease,color 160ms ease}
 .language-picker:hover,.language-picker:focus-within{border-color:var(--grey-2);background:var(--grey-1);color:#100b0b}
 .language-icon{font-size:1rem;line-height:1;color:inherit}
+.language-picker::after{content:"⌄";font-size:.8rem;line-height:1;color:inherit;margin-left:1px}
 .language-picker select{max-width:112px;border:0;outline:0;background:transparent;color:inherit;font:inherit;font-size:.82rem;font-weight:600;cursor:pointer;appearance:none}
 .language-picker select option{background:#121212;color:var(--grey-1)}
 @media(max-width:760px){.footer-main{gap:38px}.footer-top-row{width:100%;align-items:flex-start}.footer-links{width:100%}}
