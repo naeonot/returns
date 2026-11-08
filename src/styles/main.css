@@ -32,7 +32,7 @@
 .footer-brand-block>p,.footer-column a{color:var(--grey-4)}
 .footer-brand-block>p a:hover{color:var(--red-2)}
 .footer-brand-block strong,.footer-column h3{color:var(--grey-1)}
-.footer-bottom{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;border-top:1px solid var(--grey-6);color:var(--grey-5)}
+.footer-bottom{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:24px;text-align:center;border-top:1px solid var(--grey-6);color:var(--grey-5)}
 .footer-bottom span:first-child{color:var(--grey-3)}
 .content-page p{color:var(--grey-3)}
 @media(max-width:600px){.brand img{width:132px}.hero-logo{max-height:210px}.footer-brand img{width:136px}}
