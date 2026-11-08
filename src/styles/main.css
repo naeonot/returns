@@ -26,7 +26,7 @@
 .newsletter-copy>p:last-child{color:#D3D0D0}
 .newsletter-controls input{border-color:var(--grey-6);background:#121212;color:var(--grey-1)}
 .newsletter-controls input:focus{border-color:var(--red-4)}
-.newsletter-controls button{background:#F1F0F0;color:#fff}
+.newsletter-controls button{background:#e8e8e8;color:#111114}
 .newsletter-controls button:hover{background:var(--red-4)}
 .footer-brand{display:inline-flex;align-items:center}
 .footer-brand img{display:block;width:150px;max-height:54px;object-fit:contain;object-position:left center}
