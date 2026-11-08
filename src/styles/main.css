@@ -25,7 +25,7 @@ body{min-height:100vh;display:flex;flex-direction:column}
 .newsletter-check{display:block;width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
 .newsletter-check path{stroke-dasharray:24;stroke-dashoffset:24;animation:newsletter-draw-check 420ms ease-out 100ms forwards}
 @keyframes newsletter-draw-check{to{stroke-dashoffset:0}}
-.newsletter-message{margin:10px 0 0 17px;color:var(--grey-3);font-size:.78rem;line-height:1.45;text-align:left}
+.newsletter-message{display:flex;align-items:flex-start;gap:7px;margin:10px 0 0 17px;color:var(--grey-3);font-size:.78rem;line-height:1.45;text-align:left}.newsletter-message::before{content:'⚠';flex:none;color:var(--grey-3);font-size:.88rem;line-height:1.4}
 .newsletter-message[hidden]{display:none}
 .newsletter-controls input[aria-invalid="true"]{border-color:var(--grey-5)}
 .footer-main{display:flex;flex-direction:column;gap:44px;padding:clamp(44px,6vw,76px) 0}
