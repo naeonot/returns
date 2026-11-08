@@ -27,8 +27,53 @@
       </section>
     </main>
     <footer class="site-footer">
-      <span>© <span id="year"></span> Returns</span>
-      <span>All rights reserved.</span>
+      <section class="newsletter" id="signup" aria-labelledby="newsletter-title">
+        <div class="newsletter-copy">
+          <p class="newsletter-kicker">THE RETURNS COMMUNITY</p>
+          <h2 id="newsletter-title">Stay in the loop.</h2>
+          <p>Get the latest news, updates, and announcements from the world of Returns.</p>
+        </div>
+        <div class="newsletter-action">
+          <label for="newsletter-email">STAY UP TO DATE</label>
+          <div class="newsletter-controls">
+            <input id="newsletter-email" type="email" placeholder="Enter your email" autocomplete="email" />
+            <button type="button" disabled aria-disabled="true">Coming soon</button>
+          </div>
+          <p class="newsletter-note">Newsletter sign-ups are coming soon.</p>
+        </div>
+      </section>
+
+      <div class="footer-main">
+        <div class="footer-brand-block" id="studio">
+          <a class="footer-brand" href="/" aria-label="Returns home">RETURNS<span>®</span></a>
+          <p>An independent game by <strong>NAEO</strong>.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="#studio">Studio</a>
+            <a href="#download">Download</a>
+            <a href="#main">The game</a>
+          </div>
+          <div class="footer-column" id="support">
+            <h3>Support</h3>
+            <a href="mailto:">Contact</a>
+            <a href="#support">Help</a>
+            <a href="#support">Community</a>
+          </div>
+          <div class="footer-column">
+            <h3>More</h3>
+            <a href="#signup">Updates</a>
+            <a href="#main">About Returns</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Returns</span>
+        <span>All rights reserved.</span>
+      </div>
     </footer>
   </body>
 </html>
