@@ -48,8 +48,6 @@ if (main) {
       <p class="eyebrow">A LITTLE NOSTALGIA / FOR EVERYONE</p>
       <h1 id="poem-title">Classic Nursery<br>Rhymes<span>.</span></h1>
       <p class="poem-intro">Four familiar little rhymes, brought together with a touch of childhood magic.</p>
-      <div class="poem-hero-art"><img src="${illustration("star")}" alt="A glowing golden star in a magical night sky"></div>
-      <p class="poem-byline">Four timeless rhymes to read and remember</p>
     </section>
     <section class="poem-verses" aria-label="Classic nursery rhymes">
       ${rhymes.map((rhyme) => `
