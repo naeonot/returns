@@ -61,3 +61,21 @@
 /* Make the full language pill an easy touch target */
 .language-trigger{width:100%;min-width:124px;justify-content:flex-start;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .language-picker{cursor:pointer}
+
+/* Refine the language dropdown chevron */
+.language-chevron{
+  display:inline-block;
+  width:8px;
+  height:8px;
+  margin-left:2px;
+  border-right:1.7px solid currentColor;
+  border-bottom:1.7px solid currentColor;
+  font-size:0;
+  line-height:0;
+  transform:translateY(-2px) rotate(45deg);
+  transition:transform 180ms ease;
+  flex:none;
+}
+.language-trigger[aria-expanded="true"] .language-chevron{
+  transform:translateY(2px) rotate(225deg);
+}
