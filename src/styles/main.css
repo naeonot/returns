@@ -50,3 +50,10 @@
 .language-menu button{width:100%;padding:10px 13px;border:0;border-radius:9px;background:transparent;color:var(--grey-2);font:inherit;font-size:.82rem;text-align:left;white-space:nowrap;cursor:pointer}
 .language-menu button:hover,.language-menu button[aria-current="true"]{background:#242020;color:var(--grey-1)}
 @media(max-width:600px){.language-trigger{min-height:38px;padding:0 13px;font-size:.76rem}.language-menu button{padding:9px 11px}}
+
+/* Footer top row layout */
+.footer-main{display:flex;flex-direction:column;gap:44px;padding:clamp(44px,6vw,76px) 0}
+.footer-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;width:100%}
+.footer-brand-block{flex:0 1 auto}
+@media(max-width:760px){.footer-main{gap:38px}.footer-top-row{align-items:flex-start}.footer-links{width:100%}}
+@media(max-width:600px){.footer-top-row{gap:16px}.footer-main{gap:34px}}
