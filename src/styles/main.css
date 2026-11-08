@@ -139,3 +139,13 @@
 @keyframes newsletter-draw-check{
   to{stroke-dashoffset:0}
 }
+
+
+.newsletter-message{
+  margin:10px 0 0 4px;
+  color:var(--grey-3);
+  font-size:.78rem;
+  line-height:1.45;
+}
+.newsletter-message[hidden]{display:none}
+.newsletter-controls input[aria-invalid="true"]{border-color:var(--grey-5)}
