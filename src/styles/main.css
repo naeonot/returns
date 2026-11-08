@@ -101,3 +101,11 @@
 .faq-bottom a{color:var(--grey-1);font-size:.86rem;font-weight:600;text-decoration:none}
 .faq-bottom a:hover{color:var(--red-2)}
 @media(max-width:600px){.faq-item summary{padding:20px 36px 20px 0}.faq-item p{padding-right:12px}.faq-bottom{align-items:flex-start;flex-direction:column;gap:12px}}
+
+
+/* Legal placeholder pages */
+.legal-page h1{max-width:820px}
+.legal-list{margin-top:8px}
+.legal-item{padding:24px 0}
+.legal-item h2{margin:0 0 10px;color:var(--grey-1);font-size:clamp(1rem,2vw,1.12rem);font-weight:600;line-height:1.5}
+.legal-item p{max-width:700px;margin:0;padding:0;color:var(--grey-3);font-size:.9rem;line-height:1.8}
