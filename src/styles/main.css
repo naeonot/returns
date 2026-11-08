@@ -23,7 +23,7 @@
 .site-footer{background:#0c0c0c;border-top-color:var(--grey-7)}
 .newsletter{border-color:var(--grey-6);background:#121212}
 .newsletter-copy>p:last-child{color:var(--grey-3)}
-.newsletter-controls input{border-color:var(--grey-6);background:#0c0c0c;color:var(--grey-1)}
+.newsletter-controls input{border-color:var(--grey-6);background:#121212;color:var(--grey-1)}
 .newsletter-controls input:focus{border-color:var(--red-4)}
 .newsletter-controls button{background:var(--red-5);color:#fff}
 .newsletter-controls button:hover{background:var(--red-4)}
