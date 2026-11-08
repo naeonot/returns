@@ -105,3 +105,20 @@ if(languageTrigger && languageMenu){
   });
 }
 setLanguage(savedLanguage);
+
+
+// Newsletter: show a small confirmation tick for a valid email address.
+const newsletterEmail=document.querySelector("#newsletter-email");
+const newsletterJoin=document.querySelector("#newsletter-join");
+if(newsletterEmail && newsletterJoin){
+  newsletterJoin.addEventListener("click",()=>{
+    if(!newsletterEmail.checkValidity() || !newsletterEmail.value.trim()){
+      newsletterEmail.reportValidity();
+      return;
+    }
+    newsletterJoin.classList.add("newsletter-success");
+    newsletterJoin.innerHTML='<svg class="newsletter-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"></path></svg>';
+    newsletterJoin.setAttribute("aria-label","Email looks valid");
+    newsletterJoin.disabled=true;
+  });
+}
