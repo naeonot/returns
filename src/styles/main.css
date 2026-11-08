@@ -13,15 +13,15 @@
 .brand img{display:block;width:150px;max-height:48px;object-fit:contain;object-position:left center}
 .main-nav a{color:var(--grey-2)}
 .main-nav a:hover,.footer-column a:hover{color:var(--red-2)}
-.main-nav .signup-link{border-color:var(--red-5);background:var(--red-7);color:var(--red-1)}
-.main-nav .signup-link:hover{border-color:var(--red-3);background:var(--red-4);color:#fff}
+.main-nav .signup-link{border-color:var(--grey-5);background:transparent;color:var(--grey-1)}
+.main-nav .signup-link:hover{border-color:var(--grey-2);background:var(--grey-1);color:#100b0b}
 .home-main{background:#100b0b}
 .hero{position:relative}
 .eyebrow{color:var(--red-3)}
 .hero-logo{display:block;width:min(100%,760px);max-height:300px;height:auto;object-fit:contain;margin:22px auto 0;}
 .intro{color:var(--grey-3)}
 .site-footer{background:#0b0808;border-top-color:var(--grey-7)}
-.newsletter{border-color:var(--grey-6);background:linear-gradient(135deg,#241414,#151010)}
+.newsletter{border-color:var(--grey-6);background:#151515}
 .newsletter-copy>p:last-child{color:var(--grey-3)}
 .newsletter-controls input{border-color:var(--grey-6);background:#1b1414;color:var(--grey-1)}
 .newsletter-controls input:focus{border-color:var(--red-4)}
