@@ -107,18 +107,29 @@ if(languageTrigger && languageMenu){
 setLanguage(savedLanguage);
 
 
-// Newsletter: show a small confirmation tick for a valid email address.
+// Newsletter: show a short inline validation message or an animated tick.
 const newsletterEmail=document.querySelector("#newsletter-email");
 const newsletterJoin=document.querySelector("#newsletter-join");
+const newsletterMessage=document.querySelector("#newsletter-message");
 if(newsletterEmail && newsletterJoin){
   newsletterJoin.addEventListener("click",()=>{
-    if(!newsletterEmail.checkValidity() || !newsletterEmail.value.trim()){
-      newsletterEmail.reportValidity();
+    if(!newsletterEmail.value.trim() || !newsletterEmail.checkValidity()){
+      if(newsletterMessage){
+        newsletterMessage.textContent="Please enter a valid email address.";
+        newsletterMessage.hidden=false;
+      }
+      newsletterEmail.setAttribute("aria-invalid","true");
       return;
     }
+    if(newsletterMessage) newsletterMessage.hidden=true;
+    newsletterEmail.removeAttribute("aria-invalid");
     newsletterJoin.classList.add("newsletter-success");
     newsletterJoin.innerHTML='<svg class="newsletter-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7"></path></svg>';
     newsletterJoin.setAttribute("aria-label","Email looks valid");
     newsletterJoin.disabled=true;
+  });
+  newsletterEmail.addEventListener("input",()=>{
+    if(newsletterMessage) newsletterMessage.hidden=true;
+    newsletterEmail.removeAttribute("aria-invalid");
   });
 }
